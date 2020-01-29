@@ -1,0 +1,37 @@
+package tarea1;
+
+import java.util.Scanner;
+
+
+public class Tarea1 {
+
+    
+    public static void main(String[] args) {
+       Scanner numero = new Scanner(System.in);
+       System.out.println("Por favor ingrese un numero");
+       int n = numero.nextInt();
+       
+        if (n >= 3) {
+            
+            for (int i = 0; i < n; i++) {
+                System.out.print("1");
+            }
+            System.out.println("");
+            
+            for (int i = 0; i < n-2; i++) {
+                System.out.print("1");
+                for (int j = 0; j < n-2; j++) {
+                    System.out.print(" ");                    
+                }
+                System.out.println("1");
+            }
+            for (int i = 0; i < n; i++) {
+                System.out.print("1");
+            }
+        }else {
+            System.out.println("Error el numero debe ser mayor a 3");
+        }
+           
+    }
+    
+}
